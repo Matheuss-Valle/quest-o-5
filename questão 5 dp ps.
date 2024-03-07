@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inverter string</title>
+</head>
+<body>
+    <script>
+        function inverterString(inputString) {
+            let invertedString = '';
+        
+            for (let i = inputString.length - 1; i >= 0; i--) {
+                invertedString += inputString[i];
+            }
+        
+            return invertedString;
+        }
+        
+        function inverterEExibir() {
+            // para escrever alguma coisa
+            let palavra = prompt("Digite uma palavra:");
+        
+            // aqui para inverter
+            let palavraInvertida = inverterString(palavra);
+        
+            // para mostrar a palavra na tela
+            document.write(`Palavra original: ${palavra}<br>`);
+            document.write(`Palavra invertida: ${palavraInvertida}<br>`);
+        }
+        
+        // Chama a função quando a página é carregada
+        inverterEExibir();
+        </script>
+</body>
+</html>
